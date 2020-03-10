@@ -1,0 +1,33 @@
+/*-------------------------------------------
+  -- Slider
+-------------------------------------------*/
+.ts-slider {
+  height: 100%;
+
+  .ts-slide {
+    align-items: flex-end;
+    display: flex;
+    height: 100%;
+    padding-bottom: 12vh;
+    position: relative;
+
+    h1 {
+      margin-bottom: 16px;
+    }
+
+    .ts-background, .ts-background-image {
+      img {
+        display: none !important;
+      }
+    }
+  }
+
+  &.owl-carousel {
+    .owl-dots {
+      transform: translateY(-100%);
+      .owl-dot.active span {
+        background-color: var(--color-white);
+      }
+    }
+  }
+}

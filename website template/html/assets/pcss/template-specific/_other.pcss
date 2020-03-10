@@ -1,0 +1,26 @@
+/*-------------------------------------------
+  -- Other
+-------------------------------------------*/
+
+.ts-underline {
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 2px;
+  transition: background-size .3s cubic-bezier(.77,0,.18,1);
+
+  &.ts-link {
+    text-decoration: none;
+  }
+}
+
+a.ts-underline:hover {
+  background-size: 0 2px;
+}
+
+h1 {
+  a.ts-underline {
+    background-position: 100% calc( 100% - 16px );
+  }
+}

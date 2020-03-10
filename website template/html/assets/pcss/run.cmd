@@ -1,0 +1,1 @@
+postcss --use postcss-import autoprefixer css-mqpacker postcss-nested postcss-pixels-to-rem postcss-discard-comments postcss-sass-colors perfectionist -o ../css/style.css --watch style.pcss --no-map

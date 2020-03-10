@@ -1,0 +1,27 @@
+/*-------------------------------------------
+  -- Card
+-------------------------------------------*/
+.card {
+  backface-visibility: hidden;
+  border: none;
+  box-shadow: var(--bs-md);
+  overflow: hidden;
+}
+
+.card-columns {
+  .card {
+    margin-bottom: 20px;
+  }
+}
+.card-body, .card-footer, .card-header {
+  padding: var(--p);
+}
+
+.ts-cards-same-height {
+  > div[class*='col-'] {
+    display: flex;
+    .card {
+      width: 100%;
+    }
+  }
+}

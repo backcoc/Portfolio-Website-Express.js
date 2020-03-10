@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en">
+{{>component/head}}
+<body class="has-loading-screen">
+
+<div class="ts-page-wrapper">
+    <!--Brand Navigation
+    ====================================================================================================================
+    -->
+    <div id="brand-navigation">
+
+        <div class="container">
+
+            <div id="brand">
+                <button class="navbar-toggler d-block d-xl-none" type="button">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="img/brand-light.png" alt="brand" class="mw-100">
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <!--Main Left Navigation
+    ====================================================================================================================
+    -->
+    {{>component/sidenav}}
+
+    <!--Content
+    ====================================================================================================================
+    -->
+    <div class="ts-content">
+        <!--HERO HEADER
+        ================================================================================================================
+        ================================================================================================================
+        -->
+        <header id="ts-hero" class="ts-block">
+
+            <div class="container pt-2 pt-sm-5 pt-lg-0">
+                <h1 class="ts-text-underline">Let’s Talk Together</h1>
+            </div>
+
+        </header>
+
+        <!--MAIN CONTENT
+        ================================================================================================================
+        ================================================================================================================
+        -->
+        <main id="ts-content">
+
+            <!--Map
+            ============================================================================================================
+            -->
+            <section id="map">
+                <div class="map ts-height--50vh" id="map-contact"></div>
+            </section>
+
+            <!--Contact Info
+            ============================================================================================================
+            -->
+            <section id="cotact-info" class="ts-block">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-md-4">
+                            <div class="row">
+
+                                <div class="col-sm-6 col-md-12">
+                                    <section class="mb-5">
+                                        <div class="ts-title mb-5">
+                                            <h2>We’re Here</h2>
+                                        </div>
+                                        <address>
+                                            1565 Broadcast Drive
+                                            <br>
+                                            Dulles, VA 20166
+                                            <br>
+                                            <br>
+                                            <strong>Tel:</strong> +1 703-996-1212
+                                            <br>
+                                            <strong>Email:</strong> <a href="#">hello@example.com</a>
+                                            <br>
+                                            <strong>Skype:</strong> <a href="#">wearepreus</a>
+                                            <br>
+                                        </address>
+                                    </section>
+                                </div>
+
+                                <div class="col-sm-6 col-md-12">
+                                    <section>
+                                        <div class="ts-title mb-5">
+                                            <h2>Social</h2>
+                                        </div>
+                                        <ul class="list-unstyled">
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fab fa-facebook-square mr-2"></i>
+                                                    Facebook
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fab fa-twitter-square mr-2"></i>
+                                                    Twitter
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fab fa-youtube-square mr-2"></i>
+                                                    Youtube
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </section>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-8">
+                            <div class="ts-title mb-5">
+                                <h2>Write Us</h2>
+                            </div>
+                            <form id="form-contact" method="post" class="clearfix ts-form ts-form-email" data-php-path="php/email.php">
+
+                                <!--Row-->
+                                <div class="row">
+
+                                    <!--Name-->
+                                    <div class="col-md-6 col-sm-6">
+                                        <div class="form-group">
+                                            <label for="form-contact-name">Name *</label>
+                                            <input type="text" class="form-control" id="form-contact-name" name="name" placeholder="Your Name" required>
+                                        </div>
+                                    </div>
+
+                                    <!--Email-->
+                                    <div class="col-md-6 col-sm-6">
+                                        <div class="form-group">
+                                            <label for="form-contact-email">Email *</label>
+                                            <input type="email" class="form-control" id="form-contact-email" name="email" placeholder="Your Email" required>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!--end row -->
+
+                                <!--Subject-->
+                                <div class="form-group">
+                                    <label for="form-contact-subject">Subject*</label>
+                                    <input type="text" class="form-control" id="form-contact-subject" name="subject" placeholder="Subject" required>
+                                </div>
+
+                                <!--Message-->
+                                <div class="form-group">
+                                    <label for="form-contact-message">Message *</label>
+                                    <textarea class="form-control" id="form-contact-message" rows="5" name="message" placeholder="Your Message" required></textarea>
+                                </div>
+
+                                <!--Submit button-->
+                                <div class="form-group clearfix">
+                                    <button type="submit" class="btn btn-primary float-right" id="form-contact-submit">Send a Message</button>
+                                </div>
+
+                                <div class="form-contact-status"></div>
+
+                            </form>
+                            <!--end form-contact -->
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!--The Team
+            ============================================================================================================
+            -->
+            <section id="the-team" class="ts-block">
+
+                <div class="container">
+
+                    <div class="ts-title">
+                        <h2>The Team</h2>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-md-4">
+                            <div class="ts-member">
+                                <div class="ts-image">
+                                    <div class="ts-img-into-bg">
+                                        <img src="img/img__person--01.jpg" alt="">
+                                    </div>
+                                </div>
+                                <h5>Gloria Derouen</h5>
+                                <h6>Company CEO</h6>
+                                <div class="ts-social">
+                                    <a href="#" class="ts-underline ts-link clearfix">Facebook</a>
+                                    <a href="#" class="ts-underline ts-link ">Twitter</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end Member-->
+
+                        <div class="col-md-4">
+                            <div class="ts-member">
+                                <div class="ts-image">
+                                    <div class="ts-img-into-bg">
+                                        <img src="img/img__person--02.jpg" alt="">
+                                    </div>
+                                </div>
+                                <h5>Thomas Quintana</h5>
+                                <h6>Head Designer</h6>
+                                <div class="ts-social">
+                                    <a href="#" class="ts-underline ts-link clearfix">Facebook</a>
+                                    <a href="#" class="ts-underline ts-link ">Twitter</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end Member-->
+
+                        <div class="col-md-4">
+                            <div class="ts-member">
+                                <div class="ts-image">
+                                    <div class="ts-img-into-bg">
+                                        <img src="img/img__person--03.jpg" alt="">
+                                    </div>
+                                </div>
+                                <h5>Connie Braden</h5>
+                                <h6>Developer</h6>
+                                <div class="ts-social">
+                                    <a href="#" class="ts-underline ts-link clearfix">Facebook</a>
+                                    <a href="#" class="ts-underline ts-link ">Twitter</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end Member-->
+
+                    </div>
+
+                </div>
+
+                <div class="ts-background ts-img-into-bg ts-background-repeat">
+                    <img src="img/bg__pattern--dot.png" alt="">
+                </div>
+
+            </section>
+
+            <!--Partners
+            ============================================================================================================
+            -->
+            <section id="partners" class="py-3">
+                <div class="container py-5">
+                    <div class="d-block d-md-flex justify-content-around align-items-center text-center ts-partners">
+
+                        <a href="#">
+                            <img src="img/logo-01.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="img/logo-02.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="img/logo-03.png" alt="">
+                        </a>
+
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        <!--end #content-->
+
+        <!--FOOTER
+        ================================================================================================================
+        ================================================================================================================
+        -->
+        <footer id="ts-footer">
+            <section id="ts-footer-main">
+                <div class="container">
+
+                    <div class="ts-title">
+                        <h2>About Us</h2>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-md-5">
+                            <p>
+                                Fusce pretium dui quis est pretium lobortis. Vestibulum eu ex sed nibh condimentum
+                                tristique eu finibus lorem. Nullam sed eleifend massa. Morbi nulla turpis, pharetra et
+                                nisl eu, pellentesque molestie erat
+                            </p>
+                            <a href="#" class="ts-link ts-underline mb-5 mb-md-0 d-inline-block">More About Us</a>
+                        </div>
+
+                        <div class="col-sm-6 col-md-4">
+                            <address class="ts-text-muted---white">
+                                1565 Broadcast Drive
+                                <br>
+                                Dulles, VA 20166
+                                <br>
+                                <br>
+                                <strong>Tel:</strong> +1 703-996-1212
+                                <br>
+                                <strong>Email:</strong> <a href="#">hello@example.com</a>
+                                <br>
+                                <strong>Skype:</strong> <a href="#">wearepreus</a>
+                                <br>
+                            </address>
+                        </div>
+
+                        <div class="col-sm-6 col-md-3">
+                            <nav class="nav flex-column">
+                                <a class="nav-link" href="#">Home</a>
+                                <a class="nav-link" href="#">About us</a>
+                                <a class="nav-link" href="#">Portfolio</a>
+                                <a class="nav-link" href="#">Services</a>
+                                <a class="nav-link" href="#">Contact</a>
+                            </nav>
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+
+            <section>
+                <div class="container py-5">
+                    <small>© 2019 All Rights Reserved</small>
+                </div>
+            </section>
+
+        </footer>
+        <!--end #footer-->
+
+    </div>
+    <!--end page-->
+</div>
+{{>component/scripts}}
+<script>
+    var latitude = 34.038405;
+    var longitude = -117.946944;
+    var markerImage = "img/map-marker.png";
+    var mapElement = "map-contact";
+
+    var map = L.map(mapElement).setView([latitude, longitude], 14);
+
+    L.tileLayer('http://{s}.tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(map);
+
+    var markerIcon = L.icon({
+        iconUrl: markerImage,
+        iconSize: [28, 38],
+        iconAnchor: [14, 38]
+    });
+
+    L.marker([latitude, longitude],{icon: markerIcon}).addTo(map);
+
+</script>
+
+</body>
+</html>

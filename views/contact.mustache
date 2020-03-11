@@ -7,21 +7,7 @@
     <!--Brand Navigation
     ====================================================================================================================
     -->
-    <div id="brand-navigation">
-
-        <div class="container">
-
-            <div id="brand">
-                <button class="navbar-toggler d-block d-xl-none" type="button">
-                    <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand" href="#">
-                    <img src="img/brand-light.png" alt="brand" class="mw-100">
-                </a>
-            </div>
-        </div>
-
-    </div>
+ {{>component/brandNavigation}}
 
     <!--Main Left Navigation
     ====================================================================================================================
@@ -276,63 +262,7 @@
         ================================================================================================================
         ================================================================================================================
         -->
-        <footer id="ts-footer">
-            <section id="ts-footer-main">
-                <div class="container">
-
-                    <div class="ts-title">
-                        <h2>About Us</h2>
-                    </div>
-
-                    <div class="row">
-
-                        <div class="col-md-5">
-                            <p>
-                                Fusce pretium dui quis est pretium lobortis. Vestibulum eu ex sed nibh condimentum
-                                tristique eu finibus lorem. Nullam sed eleifend massa. Morbi nulla turpis, pharetra et
-                                nisl eu, pellentesque molestie erat
-                            </p>
-                            <a href="#" class="ts-link ts-underline mb-5 mb-md-0 d-inline-block">More About Us</a>
-                        </div>
-
-                        <div class="col-sm-6 col-md-4">
-                            <address class="ts-text-muted---white">
-                                1565 Broadcast Drive
-                                <br>
-                                Dulles, VA 20166
-                                <br>
-                                <br>
-                                <strong>Tel:</strong> +1 703-996-1212
-                                <br>
-                                <strong>Email:</strong> <a href="#">hello@example.com</a>
-                                <br>
-                                <strong>Skype:</strong> <a href="#">wearepreus</a>
-                                <br>
-                            </address>
-                        </div>
-
-                        <div class="col-sm-6 col-md-3">
-                            <nav class="nav flex-column">
-                                <a class="nav-link" href="#">Home</a>
-                                <a class="nav-link" href="#">About us</a>
-                                <a class="nav-link" href="#">Portfolio</a>
-                                <a class="nav-link" href="#">Services</a>
-                                <a class="nav-link" href="#">Contact</a>
-                            </nav>
-                        </div>
-
-                    </div>
-                </div>
-
-            </section>
-
-            <section>
-                <div class="container py-5">
-                    <small>© 2019 All Rights Reserved</small>
-                </div>
-            </section>
-
-        </footer>
+       {{>component/footer}}
         <!--end #footer-->
 
     </div>
@@ -340,8 +270,8 @@
 </div>
 {{>component/scripts}}
 <script>
-    var latitude = 34.038405;
-    var longitude = -117.946944;
+    var latitude = 51.5079;
+    var longitude = 0.0877;
     var markerImage = "img/map-marker.png";
     var mapElement = "map-contact";
 
